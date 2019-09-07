@@ -1,7 +1,6 @@
 /* THIS is common to the whole site */
 
 html {
-    height: 100%;
     margin: 0;
 }
 
@@ -9,7 +8,6 @@ body {
     background-image: url("../images/background.png");
     margin: 0 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    height: 100%
 }
 
 /* HEADER starts */
@@ -80,10 +78,9 @@ main {
     background: #ffffff;
     border: #cccccc solid 1px;
     margin-top: 30px;
-    font-size: 14px;
-    line-height: 150%;
     min-height: 100%;
-    margin-bottom: -60px;
+    margin-bottom: 60px;
+    padding-bottom: 0;
 }
 
 main::after {
@@ -130,6 +127,7 @@ footer {
     height: 60px;
     border-top: 8px solid #4aaaa5;
     line-height: 60px;
+    margin-top: 20px;
     }
 
 .footer {
@@ -137,7 +135,9 @@ footer {
     color: #cccccc;
     padding: 50 0 0 0;
     clear:both;
+    height: 60px;
 }
+
 
 /* EACH PAGE ends */
 
@@ -151,6 +151,8 @@ footer {
 
 .bio {
     width: 910px;
+    line-height: 150%;
+    font-size: 14px;
 }
 
 /* ABOUT ME ends */
@@ -160,6 +162,10 @@ form {
     margin: auto auto;
     padding: 22px 22px;
     color: rgb(102,102,102);
+    margin-top: 30px;
+    min-height: 100%;
+    margin-bottom: 60px;
+    padding-bottom: 0;
 }
 
 input, textarea {
@@ -194,10 +200,10 @@ button:hover {
   }
 
   #portfolio-item {
-    clear: both; 
+    clear: right; 
     position: relative;
     padding: 10px 0 20px 0;
-    width: 275px;
+    width: 45%;
     display:block;
     float:left;
     }
